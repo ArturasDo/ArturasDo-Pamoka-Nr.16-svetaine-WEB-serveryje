@@ -1,0 +1,67 @@
+.nav {
+    background-color: blue;
+    height: 50px;
+    width: auto;
+}
+.nav button {
+    margin: 30px;
+}
+.nav h1 {
+    display: inline;
+}
+.search {
+    float: right;
+    margin: 15px;
+}
+.search-float {
+    position: absolute;
+    float: 0px;
+    margin: 15px;
+}
+.left {
+   width: 20%;
+}
+.content {
+   width: 50%;
+}
+.right {
+   position:
+   width: 30%;
+}
+
+#main {
+    background-color: red;
+    width: 200px;
+    margin: 0 auto;
+    height: 50px;
+}
+.move {
+    background-color: red;
+    margin: 100px;
+    padding: 100px;
+}
+.relative1 {
+    background-color: red;
+   position: relative;
+   width: 300px;
+    height: 50px;
+}
+.relative2 {
+    position: relative;
+    top: -20px;
+    left: 20px;
+    background-color: green;
+    width: 200px;
+    height: 50px;
+}
+.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 50px;
+    background-color: blue;
+}
+.div {
+    display: inline;
+}
