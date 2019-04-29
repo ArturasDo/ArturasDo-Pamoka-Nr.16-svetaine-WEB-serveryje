@@ -1,6 +1,6 @@
 .nav {
     background-color: blue;
-    height: 25px;
+    height: 35px;
     width: auto;
 }
 .nav button {
@@ -23,6 +23,7 @@
 }
 .content {
    width: 50%;
+   backgroung: blue;
 }
 .right {
    position:
