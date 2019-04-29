@@ -2,10 +2,25 @@
 
 {% block content %}
     <div class="container">
+        <p><br>
         <h3>Kontaktai</h3>
         <p>Arturas Dovydėnas<br>
-        Vilniaus gatvė<br>
-        Telefonas: 8 xxx xxxxx<br>
-        El.paštas: info@xxxxx.eu</p>
+        Vilniaus gatvė<br><br>
+        Jei norite su manimi susisiekti,<br>
+        įveskite savo duomenis ir su<br>
+        jumis susisieksiu.
+        </p>
     </div>
+    <form method="post" action="/contact">
+       <input type="text" name="contact-name" placeholder="Jūsų vardas">
+       <br>
+
+       <input type="email" name="contact-email" placeholder="Jūsų el.pašto adresas">
+        <br>
+
+       <textarea name="contact-message" placeholder="Vieta trumpai žinutei"></textarea>
+       <br>
+
+        <button type="submit">Patvirtinti</button>
+    </form>
 {% endblock content %}
