@@ -1,30 +1,45 @@
 <!-- Parent Template -->
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">v
+    <meta charset="utf-8">
+
+    <!-- Navigation bar -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Parent</title>
 
-
     <!-- Bootstrap CSS -->
-    <link href="/static/css/bootstrap.css" rel="stylesheet">
-
-    <!-- JavaScript files -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="/static/js/bootstrap.js"></script>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 </head>
 
 <body>
-<!--<nav class=”navbar fixed-top navbar-expand-md navbar-light bg-light”>-->
-    </div>
-     <div class="row">
-         <div class="text-center"><h2>Arturo svetainė</h2></div>
-         <div><a href="/"><button>Projektai</button></a></div>
-         <div class="col-sm-3 btn-lg"><a href="/about-me" class="btn btn-info" role="button"><h4>Apie mane</h4></a></div>
-         <div class="col-sm-3 btn-lg"><a href="/contact" class="btn btn-info" role="button"><h4>Kontaktai</h4></a></div>
-     </div>
+    <nav class="navbar navbar-expand-sm navbar-dark text-light bg-dark">
+        <a class="navbar-brand" href="#">Arturo Svetainė</a>
+
+        <div class="navbar-nav-scroll">
+            <ul class="nav nav-nav flex-row bd-navbar-nav">
+
+                <li class="nav-item text-warning-50">
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
+
+                <li class="nav-item text-warning-50">
+                    <a class="nav-link" href="/">Projektai</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/about-me">Apie mane</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Kontaktai</a>
+                </li>
+
+        </div>
+    </nav>
+    <!-- END Navigation bar -->
+{% block content %}
+{% endblock content %}
 </body>
 </html>

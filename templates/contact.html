@@ -2,8 +2,7 @@
 
 {% block content %}
     <div class="container">
-        <p><br>
-        <h3>Kontaktai</h3>
+        <p><h3>Kontaktai</h3></p>
         <p>Arturas Dovydėnas<br>
         Vilniaus gatvė<br><br>
         Jei norite su manimi susisiekti,<br>
@@ -11,16 +10,16 @@
         jumis susisieksiu.
         </p>
     </div>
-    <form method="post" action="/contact">
-       <input type="text" name="contact-name" placeholder="Jūsų vardas">
-       <br>
+<!--    </div>-->
+<form method="post" action="/contact">
+    <div class="container">
+        <p><input type="text" name="contact-name" placeholder="Jūsų vardas"><br>
 
-       <input type="email" name="contact-email" placeholder="Jūsų el.pašto adresas">
-        <br>
+        <p><input type="email" name="contact-email" placeholder="Jūsų el.pašto adresas"><br>
 
-       <textarea name="contact-message" placeholder="Vieta trumpai žinutei"></textarea>
-       <br>
+        <p><textarea name="contact-message" placeholder="Vieta trumpai žinutei"></textarea><br>
 
-        <button type="submit">Patvirtinti</button>
-    </form>
+        <p><button type="submit">Patvirtinti</button>
+    </div>
+</form>
 {% endblock content %}
